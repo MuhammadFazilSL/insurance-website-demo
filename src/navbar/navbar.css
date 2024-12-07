@@ -1,0 +1,63 @@
+.navbar-container{
+    display: flex;
+    padding: 20px 100px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.05);
+}
+.navbar-container>.navitems-button{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.navbar-container>.navitems-button>.navitem{
+    display: flex;
+    gap: 54px;
+}
+.navbar-container>.navitems-button>.navitem>p{
+    color: var(--Text-Dark-01, #120101);
+font-family: Neris;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 130.687%; /* 18.296px */
+}
+.navbar-container>.navitems-button>.login-button>.dropdown{
+    display: flex;
+    border-radius: 16px;
+background: var(--Background-Bg-2, #FEE);
+padding: 2px 10px;
+justify-content: center;
+align-items: center;
+gap: 1px;
+}
+.navbar-container>.navitems-button>.login-button>.dropdown>svg{
+    width: 14px;
+    height: 14px;    
+}
+.navbar-container>.navitems-button>.login-button>.dropdown>p{
+    color: #210A0B;
+font-family: Neris;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 130.687%; /* 18.296px */
+}
+.navbar-container>.navitems-button>.login-button{
+    display: flex;
+    gap: 30px;
+}
+.navbar-container>.navitems-button>.login-button>button{
+    border-radius: 24px;
+border: 1px solid var(--Primary-Green-02, #23A049);
+background-color: transparent;
+color: var(--Primary-Green-02, #23A049);
+text-align: center;
+font-family: Neris;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: 130.687%; /* 18.296px */
+padding: 10px 30px;
+}

@@ -1,0 +1,50 @@
+.achievmentCards-cards{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.achievmentCards-cards>.achievmentCards-card{
+    width: 347px;
+height: 350px;
+flex-shrink: 0;
+border-radius: 20px;
+background: #FFF;
+box-shadow: 0px 0px 37px 0px rgba(0, 0, 0, 0.05);
+text-align: center;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 32px;
+}
+.achievmentCards-cards>.achievmentCards-card:nth-child(2){
+border: 1px solid #D2242E;
+background: linear-gradient(141deg, rgba(255, 173, 180, 0.60) -16.89%, rgba(253, 185, 191, 0.15) 49.3%, rgba(255, 243, 244, 0.00) 135.21%);
+}
+.achievmentCards-cards>.achievmentCards-card>svg{
+    width: 90px;
+height: 90px;
+flex-shrink: 0;
+margin-top: 20px;
+}
+.achievmentCards-cards>.achievmentCards-card>h3{
+    color: var(--Red-01, #460C10);
+text-align: center;
+font-family: Neris;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 130.687%; /* 31.365px */
+}
+.achievmentCards-cards>.achievmentCards-card>p{
+    color: var(--Red-Light-02, #522527);
+text-align: center;
+
+/* 16 */
+font-family: Neris;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 130.687%; /* 20.91px */
+}

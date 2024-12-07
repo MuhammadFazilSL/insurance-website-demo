@@ -1,0 +1,265 @@
+.home-container>.insuranceCards-section{
+    padding: 20px 100px 50px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background: #FFF9F9;
+}
+.home-container>.insuranceCards-section>p{
+    color: var(--Red-01, #460C10);
+text-align: center;
+
+/* Headlinw 02/36 */
+font-family: Neris;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 43.2px */
+text-transform: capitalize;
+}
+.home-container>.insuranceCards-section>p>span{
+    color: var(--Red, #D2242E);
+}
+.home-container>.achievments-section{
+    padding: 30px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    background: #FFF;
+}
+.home-container>.achievments-section>h2{
+    color: var(--Red-01, #460C10);
+text-align: center;
+
+/* Headlinw 02/36 */
+font-family: Neris;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 43.2px */
+text-transform: capitalize;
+}
+.home-container>.achievments-section>h2>span{
+    color: var(--Primary-Red-01, #D2242E);
+
+}
+.home-container>.achievments-section>p{
+    color: var(--2, #5C5C5C);
+text-align: center;
+width: 60%;
+/* 20 Normal */
+font-family: Neris;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 130.687%; /* 26.137px */
+}
+.home-container>.feedback-section{
+    padding: 25px 0 80px 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background: #FFF9F9;
+}
+.home-container>.feedback-section>h2{
+    color: var(--Red-01, #460C10);
+text-align: center;
+
+/* Headlinw 02/36 */
+font-family: Neris;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 43.2px */
+text-transform: capitalize;
+}
+.home-container>.feedback-section>h2>span{
+    color: var(--Primary-Red-01, #D2242E);
+
+}
+.home-container>.feedback-section>.feedback-area{
+    display: flex;
+    align-items: center;
+}
+.home-container>.feedback-section>.feedback-area>.feedbackarea-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 30%;
+}
+.home-container>.feedback-section>.feedback-area>.feedbackarea-content>h6{
+    color: var(--Text-Dark-01, #120101);
+
+/* Headline 03/20 */
+font-family: Neris;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 130.687%; /* 26.137px */
+}
+.home-container>.feedback-section>.feedback-area>.feedbackarea-content>p{
+    color: var(--Text-Grey-02, #7F8084);
+width: 75%;
+/* 16 */
+font-family: Neris;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 130.687%; /* 20.91px */
+}
+.home-container>.feedback-section>.feedback-area>.feedbackarea-content>span{
+    display: flex;
+    gap: 22px;
+}
+.home-container>.feedback-section>.feedback-area>.feedbackarea-content>span>span{
+    padding: 7px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.home-container>.feedback-section>.feedback-area>.feedbackarea-content>span>span>img{
+   
+width: 18px;
+height: 18px;
+
+}
+.home-container>.feedback-section>.feedback-area>.feedbackarea-content>span>span:nth-child(1)>img{
+    transform: rotate(180deg);
+}
+.home-container>.feedback-section>.feedback-area>.feedbackarea-cards{
+    padding: 5px;
+    width: 70%;
+}
+.home-container>.downloadApp-section{
+    padding: 60px 100px;
+    background-color: #FFF;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.home-container>.downloadApp-section>.downloadApp-content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 40%;
+}
+.home-container>.downloadApp-section>.downloadApp-content>h2{
+    color: var(--Red-01, #460C10);
+
+/* Headlinw 02/36 */
+font-family: Neris;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 43.2px */
+text-transform: capitalize;
+}
+.home-container>.downloadApp-section>.downloadApp-content>h2>span{
+    color: var(--Primary-Red-01, #D2242E);
+}
+.home-container>.downloadApp-section>.downloadApp-content>p{
+    color: #210A0B;
+
+/* 16 */
+font-family: Neris;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 130.687%; /* 20.91px */
+}
+.home-container>.downloadApp-section>.downloadApp-content>ul{
+    color: var(--Red-Light-02, #522527);
+font-family: Neris;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 162.188%; /* 25.95px */
+margin-bottom: 26px;
+margin-left: 25px;
+}
+.home-container>.downloadApp-section>.downloadApp-content>h4{
+    color: #210A0B;
+
+/* 16 */
+font-family: Neris;
+font-size: 16px;
+font-style: normal;
+font-weight: 300;
+line-height: 130.687%; /* 20.91px */
+}
+.home-container>.downloadApp-section>.downloadApp-content>span{
+    display: flex;
+    gap: 24px;
+}
+.home-container>.downloadApp-section>.downloadApp-content>span>svg{
+    width: 180px;
+height: 54.758px;
+flex-shrink: 0;
+}
+.home-container>.downloadApp-section>.downloadApp-image{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-container>.downloadApp-section>.downloadApp-image>img{
+    width: 330px;
+height: 420px;
+}
+.home-container>.partners-section{
+    background: #FFF9F9;
+    padding: 80px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+.home-container>.partners-section>h2{
+    color: var(--Red-01, #460C10);
+text-align: center;
+
+/* Headlinw 02/36 */
+font-family: Neris;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: 120%; /* 43.2px */
+text-transform: capitalize;
+}
+.home-container>.partners-section>h2>span{
+    color: var(--Primary-Red-01, #D2242E);
+}
+.home-container>.partners-section>span{
+    display: flex;
+    justify-content: space-between;
+}
+.home-container>.partners-section>span>img{
+    object-fit: contain;
+    width: auto;
+    height: auto;
+}
+.home-container>.partners-section>.circle-designRight{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 309px;
+height: 420px;
+flex-shrink: 0;
+border-radius: 136.5px;
+background: rgba(255, 233, 233, 0.86);
+filter: blur(176px);
+}
+.home-container>.partners-section>.circle-designLeft{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 309px;
+height: 420px;
+border-radius: 136.5px;
+background: rgba(255, 233, 233, 0.86);
+filter: blur(176px);
+}

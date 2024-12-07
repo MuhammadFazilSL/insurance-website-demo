@@ -1,0 +1,102 @@
+.insuranceCards-cards{
+    display: flex;
+    gap: 20px;
+    background-color: transparent;
+    width: 100%;
+}
+.insuranceCards-cards>.insuranceCards-card{
+    width: 163px;
+height: 146px;
+padding: 16px;
+border-radius: 12px;
+background: #FFF;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.07);
+cursor: pointer;
+}
+.insuranceCards-cards>.insuranceCards-card.active{
+    background: #FEE0E2;
+}
+.insuranceCards-cards>.insuranceCards-card>svg{
+    width: 56px;
+height: 56px;
+flex-shrink: 0;
+}
+.insuranceCards-cards>.insuranceCards-card:last-child>svg{
+    width: 37.994px;
+height: 32.566px;
+margin-top: 12px;
+}
+.insuranceCards-cards>.insuranceCards-card>img{
+    width: 98.222px;
+height: 30.222px;
+margin-top: 12px;
+}
+.insuranceCards-cards>.insuranceCards-card>span{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.insuranceCards-cards>.insuranceCards-card>span>span>p:nth-child(1){
+    color: var(--Primary-Red-01, #D2242E);
+
+/* 20 Normal */
+font-family: Neris;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 130.687%; /* 26.137px */
+}
+.insuranceCards-cards>.insuranceCards-card>span>span>p:nth-child(2){
+    color: var(--Text-Dark-01, #120101);
+
+/* 20 Normal */
+font-family: Neris;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: 130.687%;
+}
+.insuranceCards-cards>.insuranceCards-card>span>span:nth-child(2){
+    width: 46.002px;
+height: 46px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: rgba(241, 241, 241, 0.69);
+border-radius: 82% 13% 13% 0;
+position:absolute;
+right: -16px;
+bottom: -16px;
+}
+.insuranceCards-cards>.insuranceCards-card.active>span>span:nth-child(2){
+    width: 58.002px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(253, 237, 242, 0.60);
+    border-radius: 82% 13% 13% 0;
+    position:absolute;
+    right: -16px;
+    bottom: -16px;
+}
+.insuranceCards-cards>.insuranceCards-card.active>span>span:nth-child(2)>span{
+    width: 46.002px;
+height: 46px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: #FEE0E2;
+border-radius: 82% 13% 13% 0;
+position:absolute;
+right: -2px;
+bottom: -2px;
+}
+.insuranceCards-cards>.insuranceCards-card>span>span:nth-child(2)>img{
+    width: 18px;
+    height: 18px;
+}
