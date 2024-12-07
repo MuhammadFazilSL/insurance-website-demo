@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/insurance-website-demo/static/css/main.7bd27c08.css",
-    "main.js": "/insurance-website-demo/static/js/main.7ece1443.js",
+    "main.js": "/insurance-website-demo/static/js/main.ed0e8b7f.js",
     "static/media/Bannerimg.png": "/insurance-website-demo/static/media/Bannerimg.d5218ecae874ddd0eee9.png",
     "static/media/banner-mainimg.png": "/insurance-website-demo/static/media/banner-mainimg.51ed0a2053679a55c211.png",
     "static/media/Neris-SemiBold.otf": "/insurance-website-demo/static/media/Neris-SemiBold.743c8c85dd5dbec2d350.otf",
@@ -13,10 +13,10 @@
     "static/media/Group-images-2.png": "/insurance-website-demo/static/media/Group-images-2.9a41b2c3b5cfba8c2721.png",
     "index.html": "/insurance-website-demo/index.html",
     "main.7bd27c08.css.map": "/insurance-website-demo/static/css/main.7bd27c08.css.map",
-    "main.7ece1443.js.map": "/insurance-website-demo/static/js/main.7ece1443.js.map"
+    "main.ed0e8b7f.js.map": "/insurance-website-demo/static/js/main.ed0e8b7f.js.map"
   },
   "entrypoints": [
     "static/css/main.7bd27c08.css",
-    "static/js/main.7ece1443.js"
+    "static/js/main.ed0e8b7f.js"
   ]
 }
