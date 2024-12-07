@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/insurance-website-demo/static/css/main.7bd27c08.css",
-    "main.js": "/insurance-website-demo/static/js/main.ed0e8b7f.js",
+    "main.css": "/insurance-website-demo/static/css/main.86c6f336.css",
+    "main.js": "/insurance-website-demo/static/js/main.edffa0ec.js",
     "static/media/Bannerimg.png": "/insurance-website-demo/static/media/Bannerimg.d5218ecae874ddd0eee9.png",
     "static/media/banner-mainimg.png": "/insurance-website-demo/static/media/banner-mainimg.51ed0a2053679a55c211.png",
     "static/media/Neris-SemiBold.otf": "/insurance-website-demo/static/media/Neris-SemiBold.743c8c85dd5dbec2d350.otf",
@@ -12,11 +12,11 @@
     "static/media/Group-images1.png": "/insurance-website-demo/static/media/Group-images1.991f366522124552515d.png",
     "static/media/Group-images-2.png": "/insurance-website-demo/static/media/Group-images-2.9a41b2c3b5cfba8c2721.png",
     "index.html": "/insurance-website-demo/index.html",
-    "main.7bd27c08.css.map": "/insurance-website-demo/static/css/main.7bd27c08.css.map",
-    "main.ed0e8b7f.js.map": "/insurance-website-demo/static/js/main.ed0e8b7f.js.map"
+    "main.86c6f336.css.map": "/insurance-website-demo/static/css/main.86c6f336.css.map",
+    "main.edffa0ec.js.map": "/insurance-website-demo/static/js/main.edffa0ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bd27c08.css",
-    "static/js/main.ed0e8b7f.js"
+    "static/css/main.86c6f336.css",
+    "static/js/main.edffa0ec.js"
   ]
 }
