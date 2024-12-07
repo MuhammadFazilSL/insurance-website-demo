@@ -4,6 +4,7 @@ import Tenangimg from '../../assets/banner/Tenangimg.png'
 import bannerMainimg from '../../assets/banner/banner-mainimg.png'
 import imgLeft from '../../assets/banner/Group-images1.png'
 import imgRight from '../../assets/banner/Group-images-2.png'
+import Forms from '../../utils/forms/forms'
 
 const Banner = () => {
   const [selectedIndex, setselectedIndex] = useState(0)
@@ -28,7 +29,11 @@ const Banner = () => {
                     <rect width="40" height="40" fill="white"/>
                   </clipPath>
                 </defs>
-              </svg>)
+              </svg>),
+                fields: [
+                  { label: 'Vehicle Registration Number', placeholder: 'Enter Registration Number' },
+                  { label: 'Mobile Number', placeholder: 'Enter Mobile Number' },
+              ],
         },
         {
             title : "Hiker PA",
@@ -36,11 +41,20 @@ const Banner = () => {
                 <path d="M15.8563 21.8875C15.5001 23.4154 14.6634 24.6735 14.0386 24.9616L14.2991 22.4539C14.4892 19.6893 15.1185 13.2459 15.8566 13.2693C17.3859 13.3177 16.8781 15.9356 16.6382 17.4467C16.3663 19.1589 16.0444 21.0803 15.8563 21.8875Z" fill="#D2242E"/>
                 <path d="M21.594 18.0177C21.9035 18.5335 22.213 19.0493 22.5225 19.5652C22.7804 20.0294 23.2447 20.3905 23.7605 20.4937C28.5578 21.4738 28.9705 21.6801 30.0021 21.6285L32.2718 36.8457C32.3234 37.1036 32.5813 37.31 32.8393 37.2584C33.0972 37.2068 33.3035 36.9489 33.2519 36.691L30.1569 16.0059C30.0021 15.0774 29.1768 14.4584 28.1967 14.5616C27.2682 14.7163 26.6492 15.5932 26.804 16.5217L27.0103 17.8113C26.3913 17.6566 25.7207 17.5534 25.1017 17.3987C25.0501 17.3987 24.9985 17.3471 24.9469 17.2955L22.2646 12.7045C21.8519 12.034 21.0782 11.5697 20.2528 11.5697H18.1895C16.8483 11.5697 15.7135 12.395 15.2492 13.6846L14.4755 13.4267C12.5153 12.8593 10.5035 14.1489 10.2456 16.2122L9.78133 20.4937L9.2655 24.6204C9.21391 24.8783 9.42025 25.1362 9.72975 25.1878C9.98767 25.2394 10.2456 25.0331 10.2972 24.7235L10.5551 22.6602C10.9162 22.9181 11.3804 23.0729 11.7931 23.0729H13.5985C13.2374 25.1362 12.9795 26.6321 12.8248 27.5091C12.8248 27.6638 12.7216 27.8186 12.67 27.9217C11.8447 29.005 10.7098 30.6557 8.90441 33.1317C8.18224 34.1634 8.44016 35.6077 9.575 36.2267C10.5035 36.7426 11.6899 36.5362 12.3605 35.6593C12.9279 34.9371 14.5309 32.7997 15.1499 31.9227C15.3047 31.7164 15.2531 31.3553 15.0467 31.2006C14.8404 31.0458 14.4793 31.0974 14.3246 31.3037C13.7056 32.1291 12.1026 34.215 11.5352 34.9887C11.1741 35.6077 10.5551 35.7109 10.0393 35.453C9.47183 35.1435 9.31708 34.3697 9.67817 33.8539C11.432 31.4294 12.67 29.6756 13.4438 28.6439C13.6501 28.386 13.7533 28.0765 13.8049 27.8186C15.5071 17.7082 15.0945 18.4819 16.2293 14.2005C16.4356 13.272 17.261 12.653 18.2411 12.653H20.3044C20.7687 12.653 21.1813 12.9109 21.3877 13.272L24.07 17.8629C24.2248 18.1724 24.5343 18.3788 24.8954 18.4819C26.9071 18.8946 28.9705 19.3588 29.6411 19.5136L29.7958 20.7C28.9189 20.7 28.4031 20.4937 23.9153 19.5652C23.6574 19.5136 23.451 19.3588 23.3478 19.1525C22.7804 18.1724 21.8519 16.5733 21.8003 16.5217C21.6456 16.2638 21.3361 16.1607 21.1297 16.2638C20.975 16.3154 20.8202 16.4702 20.7687 16.6249C20.7687 16.6765 20.8202 16.0059 19.4791 23.3308C19.3759 23.6919 19.5307 24.053 19.8402 24.2593C20.8202 24.9299 21.8003 25.6005 22.8836 26.2195C23.3994 26.529 23.7089 26.8901 23.9153 27.5607C24.6374 29.8819 25.4112 32.1 26.2365 34.6276C26.546 35.6593 25.927 36.3299 25.1533 36.3299C24.6374 36.3299 24.2248 36.0204 24.07 35.5561C23.6574 34.3697 22.3162 30.2946 21.9551 29.1082C21.8003 28.6439 21.4908 28.2312 21.0782 27.9217C20.8718 27.767 20.0981 27.2512 17.5705 25.4973C17.4673 25.4457 17.261 25.291 16.9515 25.3941C16.6936 25.4973 16.642 25.8068 16.5904 25.91C16.5388 26.0647 16.2809 27.9217 16.2293 28.2312C16.1261 28.7987 15.8682 29.3145 15.404 29.8819C15.0945 30.243 14.7334 30.7588 14.2691 31.3778C14.1144 31.5842 14.1659 31.9453 14.3723 32.1C14.5786 32.2548 14.9397 32.2032 15.0945 31.9969C15.5587 31.3778 15.9198 30.862 16.2293 30.5009C16.7967 29.7788 17.1578 29.0566 17.261 28.3344C17.3126 27.9733 17.4673 26.9416 17.5189 26.5806C18.499 27.2512 19.4791 27.9217 20.4592 28.6439C20.6655 28.7987 20.8718 29.005 20.9234 29.2629C21.2845 30.4493 22.6257 34.576 23.0383 35.7109C23.3478 36.5878 24.1216 37.1552 25.1017 37.1552H25.1533C26.546 37.1552 27.7325 35.8656 27.2166 34.1118C26.4945 31.9453 25.6691 29.4177 24.8954 27.0448C24.6374 26.1679 24.1732 25.5489 23.3994 25.1362C22.4193 24.5688 21.5424 23.9498 20.5623 23.2792C20.8202 22.4023 20.7687 22.7118 21.594 18.0177ZM13.7533 22.0928H11.7931C11.1741 22.0928 10.7098 21.5769 10.7614 20.9579L11.2773 16.3154C11.432 14.9226 12.8248 13.9941 14.1659 14.4068L15.0429 14.6647C13.908 19.4104 13.9596 20.9064 13.7533 22.0928ZM28.1451 18.0693L27.8872 16.367C27.8356 16.0059 28.0936 15.6448 28.4546 15.5932C28.8157 15.5416 29.1768 15.7996 29.2284 16.1607L29.5379 18.3272L28.1451 18.0693Z" fill="#460C10"/>
                 <path d="M20.9234 10.7443C22.832 10.7443 24.2763 9.24841 24.2763 7.39139C24.2763 5.53438 22.7804 4.03845 20.9234 4.03845C19.0664 4.03845 17.5705 5.58596 17.5705 7.39139C17.5705 9.24841 19.0664 10.7443 20.9234 10.7443ZM20.8718 5.07013C20.9234 5.07013 20.9234 5.07013 20.8718 5.07013C22.1614 5.07013 23.1931 6.1018 23.1931 7.39139C23.1931 8.68099 22.1614 9.71266 20.8718 9.71266C19.5822 9.71266 18.5506 8.68099 18.5506 7.39139C18.5506 6.1018 19.6338 5.07013 20.8718 5.07013Z" fill="#460C10"/>
-              </svg>)
+              </svg>),
+                fields: [
+                  { label: 'Name', placeholder: 'Enter Full Name' },
+                  { label: 'Passport/ID Number', placeholder: 'Enter Passport/ID Number' },
+                  { label: 'Emergency Contact', placeholder: 'Enter Emergency Contact' },
+              ],
         },
         {
             title : "Perlindungan Tenang Voucher",
-            images: (  <img src={Tenangimg} alt="" className={selectedIndex ===2 ? 'active' : '' } />)
+            images: (  <img src={Tenangimg} alt="" className={selectedIndex ===2 ? 'active' : '' } />),
+            fields: [
+              { label: 'Voucher Code', placeholder: 'Enter Voucher Code' },
+              { label: 'Phone Number', placeholder: 'Enter Phone Number' },
+          ],
         },
         {
             title : "Travel Insurance",
@@ -58,7 +72,12 @@ const Banner = () => {
                     <rect width="40" height="40" fill="white" transform="translate(0.5 0.500244)"/>
                   </clipPath>
                 </defs>
-              </svg>)
+              </svg>),
+              fields: [
+                { label: 'Destination', placeholder: 'Enter Travel Destination' },
+                { label: 'Travel Dates', placeholder: 'Enter Travel Dates' },
+                { label: 'Policy Number', placeholder: 'Enter Policy Number' },
+            ],
         },
         {
             title : " Bicycle Insurance",
@@ -72,7 +91,12 @@ const Banner = () => {
                 <path d="M14.7944 16.5001L12.1516 11.973" stroke="#460C10" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M9.68695 11.973H14.3485" stroke="#D2242E" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M32.4937 8.5H28.9213C27.9129 8.5 27.195 9.47944 27.4983 10.441L28.5085 13.6428" stroke="#460C10" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>)
+              </svg>),
+               fields: [
+                { label: 'Bicycle Model', placeholder: 'Enter Bicycle Model' },
+                { label: 'Bicycle Serial Number', placeholder: 'Enter Serial Number' },
+                { label: 'Mobile Number', placeholder: 'Enter Mobile Number' },
+            ],
         },
         {
             title : "Health Insurance",
@@ -80,7 +104,12 @@ const Banner = () => {
                 <path d="M5.75518 9.46307C5.53785 12.723 10.3623 17.5737 12.2025 19.8259C12.284 19.9257 12.1747 20.0249 12.0771 19.9408L7.26302 15.7954L4.24752 12.4785C3.74496 11.4733 3.04137 8.79968 4.24752 6.14615C5.33348 3.75704 7.96753 2.9812 9.50875 2.8503C9.62522 2.84041 9.66777 2.99767 9.56861 3.05956C8.12289 3.96198 5.97458 6.1721 5.75518 9.46307Z" fill="#D2242E"/>
                 <path d="M23.5713 13.7028C24.3653 12.9088 24.9086 11.959 25.2007 10.9519C25.8346 8.76968 25.2913 6.31821 23.5713 4.59767C22.314 3.3404 20.6666 2.71229 19.0187 2.71229C17.3708 2.71229 15.7234 3.3404 14.4661 4.59767C11.9521 2.08365 7.87551 2.08365 5.3615 4.59767C4.10422 5.85495 3.47559 7.50234 3.47559 9.15025C3.47559 9.75769 3.56092 10.3646 3.7316 10.9519C4.02419 11.959 4.56748 12.9088 5.3615 13.7028L14.4661 22.8075L17.8169 19.4139L19.9277 17.3031L22.2382 15.0359L23.5713 13.7028Z" stroke="#460C10" stroke-width="0.664615" stroke-miterlimit="10" stroke-linejoin="round"/>
                 <path d="M27.2066 10.952H20.8703L16.8677 7.75L12.0647 14.154L8.06224 10.952H1.72589" stroke="#460C10" stroke-width="0.664615" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>)
+              </svg>),
+                 fields: [
+                  { label: 'Policy Number', placeholder: 'Enter Policy Number' },
+                  { label: 'Full Name', placeholder: 'Enter Full Name' },
+                  { label: 'Date of Birth', placeholder: 'Enter Date of Birth' }
+              ],
         }
     ]
   return (
@@ -170,33 +199,7 @@ const Banner = () => {
         <span className='red-square'></span>
         <img src={bannerMainimg} className='bannerMainimg' alt="" />
          </div>
-         <div className="forms-area">
-            <div className="form-images">
-                <span>
-                {
-                    insuranceTypes.map((item, index) => (
-                <span onClick={()=> setselectedIndex(index)}>
-                   {
-                    item.images
-                   }
-                   <p className={index === selectedIndex ? 'active' : "" } >{item.title}</p>
-                </span>
-                    ))
-                }
-                </span>
-            </div>
-            <div className="form-contents">
-                <span>
-                    <p>Vehicle Registration Number</p>
-                    <input type="text" placeholder='Enter Registration  Number' />
-                </span>
-                <span>
-                    <p>Mobile Number</p>
-                    <input type="text" placeholder='Enter Mobile  Number' />
-                </span>
-                <button>View Price</button>
-            </div> 
-         </div>
+       <Forms insuranceTypes={insuranceTypes} setselectedIndex={setselectedIndex} selectedIndex={selectedIndex}/>
          <img src={imgLeft} alt="" className='imgLeft' />
          <img src={imgRight} alt="" className='imgRight'/>
     </div>

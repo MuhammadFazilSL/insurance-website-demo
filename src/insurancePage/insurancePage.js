@@ -1,10 +1,35 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './insurancePage.css'
 import bannerImg from '../assets/insurance/Bannerimg.png'
 import arrowLeft from '../assets/home/arrow-left.png'
+import DetailForms from '../utils/forms/detailForms'
+import { useParams } from 'react-router-dom'
 
 const InsurancePage = () => {
     const [openedItem, setopenedItem] = useState()
+    const {insurance} = useParams()
+    let heading = ""
+    
+    if(insurance === "carInsurance"){
+        heading ="Car Insurance" 
+    }
+   if(insurance === "hikerPA"){
+    heading ="Hikers PA"
+   }
+   if(insurance === "perlindunganTenangVoucher"){
+     heading ="Perlindungan Tenang" 
+   }
+   if(insurance === "travelInsurance"){
+     heading ="Travel Insurance"
+   }
+   if(insurance === "bicycleInsurance"){
+     heading ="Bicycle Insurance" 
+   }
+   if(insurance === "healthInsurance"){
+     heading ="Health Insurance"
+   }
+ 
+    console.log(typeof(insurance))
     const [openedItem2, setopenedItem2] = useState()
     const cardsDetails = [
         {
@@ -119,53 +144,11 @@ const InsurancePage = () => {
                 <img src={bannerImg} alt="" />
             </div>
             <span className="content-area">
-                    <h2>Car Insurance</h2>
+                    <h2>{heading}</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum. </p>
             </span>
         </div>
-        <div className="forms-section">
-            <div className="label-inputs-area">
-                <div>
-                    <span>
-                        <label htmlFor="registerNumber">Vehicle Register Number</label>
-                        <input type="text" id='registerNumber' name='registerNumber' placeholder='PAX111' />
-                    </span>
-                    <span>
-                        <label htmlFor="mobileNumber">Mobile Number</label>
-                        <input type="text" name='mobileNumber' id='mobileNumber' placeholder='01987654321'/>
-                    </span>  
-                    <span>
-                        <label htmlFor="postCode">Post Code</label>
-                        <input type="text" id='postCode' name='postCode' placeholder='39000'/>
-                    </span> 
-                </div>
-                <div>
-                    <span>
-                        <label htmlFor="identificationNumber">Identification Number</label>
-                        <span>
-                            <input type="text" name="identificationNumber" id="identificationNumber" placeholder='NRIC' />
-                            <input type="text" name="identificationNumber" id="identificationNumber" placeholder='560719086083' />
-                        </span>
-                    </span>
-                    <span>
-                        <label htmlFor="emailID">Email ID</label>   
-                        <input type="text" name='emailID' id='emailID' placeholder='ajis002@gmail.com' />
-                    </span> 
-                     <span>
-                        <label htmlFor="state">State</label>
-                        <span>
-                        <input type="text" name='state' id='state' placeholder='PAHANG' readOnly/>
-                        <img src={arrowLeft} alt="" className='arrowimg'/>
-                        </span>
-                    </span>  
-                </div>
-            </div>
-            <div className="checkBox-area">
-                <input type="checkbox" name='checkbox' id='checkbox'/>
-                <label htmlFor="checkbox">By clicking Cet Quote, I agreed to the <span>Terms & Conditions</span> and <span>Privacy Policy</span></label>
-            </div>
-            <button>Get Quote</button>
-        </div>
+      <DetailForms selectedItem={insurance} heading={heading}/>
         <div className="works-section">
             <h2>How It Works</h2>
             <div className="cards-area">

@@ -3,13 +3,15 @@ import './insuranceCards.css'
 import Tenangimg from '../../assets/home/Tenangimg2.png'
 import arrowRight from '../../assets/home/arrow-right.png'
 import arrowRightactive from '../../assets/home/arrow-rightactive.png'
+import { useNavigate } from 'react-router-dom'
 
 
 const InsuranceCards = () => {
     const [selectedIndex, setselectedIndex] = useState(0)
+    const navigate = useNavigate();
     const cardsDetails =[
         {
-            title : "Car Insurance ",
+            title : "Car Insurance",
             images: (<svg xmlns="http://www.w3.org/2000/svg" className={selectedIndex ===0 ? 'active' : '' } width="40" height="40" viewBox="0 0 40 40" fill="none">
                 <g clip-path="url(#clip0_1_554)">
                   <path d="M13.2308 14.7692C11.3846 15.0769 9.84616 14.1538 8.61539 14.1538C8.71795 14.0513 9.23077 13.7231 10.4615 13.2307C12 12.6154 15.6923 12 19.0769 12.3077C21.7846 12.5538 24.7179 13.8461 25.8462 14.4615L26.4615 14.4615C26.359 14.9743 24.9231 16.3076 22.1538 15.0769C18.8628 13.6142 15.0769 14.4615 13.2308 14.7692Z" fill="#D2242E"/>
@@ -38,7 +40,7 @@ const InsuranceCards = () => {
               </svg>)
         },
         {
-            title : "Perlindungan Tenang ",
+            title : "Perlindungan Tenang",
             images: (  <img src={Tenangimg} alt="" className={selectedIndex ===2 ? 'active' : '' } />)
         },
         {
@@ -60,7 +62,7 @@ const InsuranceCards = () => {
               </svg>)
         },
         {
-            title : " Bicycle Insurance",
+            title : "Bicycle Insurance",
             images: (<svg xmlns="http://www.w3.org/2000/svg" className={selectedIndex ===4 ? 'active' : '' } width="41" height="41" viewBox="0 0 41 41" fill="none">
                 <circle cx="8.39476" cy="26.2894" r="2.63158" fill="#D2242E"/>
                 <path d="M8.58015 32.4997C12.3278 32.4997 15.3658 29.4616 15.3658 25.714C15.3658 21.9664 12.3278 18.9283 8.58015 18.9283C4.83254 18.9283 1.79449 21.9664 1.79449 25.714C1.79449 29.4616 4.83254 32.4997 8.58015 32.4997Z" stroke="#460C10" stroke-width="1.2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
@@ -82,11 +84,32 @@ const InsuranceCards = () => {
               </svg>)
         }
     ]
+    const handleSelecteditem = (index,item) =>{
+      setselectedIndex(index)
+      if(item === "Car Insurance"){
+       return navigate('/insurance-website-demo/insurance/carInsurance')
+      }
+      if(item === "Hikers PA"){
+        return navigate('/insurance-website-demo/insurance/hikerPA')
+      }
+      if(item === "Perlindungan Tenang"){
+        return navigate('/insurance-website-demo/insurance/perlindunganTenangVoucher')
+      }
+      if(item === "Travel Insurance"){
+        return navigate('/insurance-website-demo/insurance/travelInsurance')
+      }
+      if(item === "Bicycle Insurance"){
+        return navigate('/insurance-website-demo/insurance/bicycleInsurance')
+      }
+      if(item === "Health Insurance"){
+        return navigate('/insurance-website-demo/insurance/healthInsurance')
+      }
+    }
   return (
     <div className="insuranceCards-cards">
         {
             cardsDetails.map((item,index) => (
-                <span className={selectedIndex === index ? "insuranceCards-card active" : "insuranceCards-card" } onClick={() => setselectedIndex(index)}>
+                <span  className="insuranceCards-card" onClick={() => handleSelecteditem(index,item.title)}>
                     {
                         item.images
                     }

@@ -17,8 +17,11 @@ align-items: center;
 box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.07);
 cursor: pointer;
 }
-.insuranceCards-cards>.insuranceCards-card.active{
-    background: #FEE0E2;
+.insuranceCards-cards>.insuranceCards-card:hover{
+    border-radius: 13px;
+    border: 1px solid #D2242E;
+    background: linear-gradient(141deg, rgba(255, 173, 180, 0.60) -12.35%, rgba(253, 185, 191, 0.15) 8.36%, rgba(255, 243, 244, 0.00) 91.58%);
+    box-shadow: 0px 4px 8px -3px rgba(0, 0, 0, 0.17);
 }
 .insuranceCards-cards>.insuranceCards-card>svg{
     width: 56px;

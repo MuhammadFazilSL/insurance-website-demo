@@ -57,6 +57,16 @@ box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 position: relative;
 top: -60px;
 }
+.insurancePage-container>.forms-section>h2{
+    text-align: left;
+    color: #D2242E;
+    font-family: Neris;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    width: 100%;
+}
 .insurancePage-container>.forms-section>.label-inputs-area{
     display: flex;
     width: 100%;
