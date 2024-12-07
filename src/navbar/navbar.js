@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom'
 const Navbar = () => {
     const navItems = ["Insurance","FAQs","About us","Blog","Contact Us"]
     const navigate = useNavigate()
+    
   return (
     <div className="navbar-container">
         <img src={logo} alt="logo" />
@@ -13,7 +14,7 @@ const Navbar = () => {
             <span className="navitem">
                {
                 navItems.map(item => (
-                    <p onClick={()=>navigate(item)}>{item}</p>
+                    <p onClick={()=>navigate(`/insurance-website-demo/${item}`)}>{item}</p>
                 ))
                }
             </span>

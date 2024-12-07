@@ -81,10 +81,6 @@ const InsurancePage = () => {
             question: "What is the difference between Agreed Value and Market Value?",
             answer: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet, consectetur adipis elit. "
         },
-        {
-            question: "How do I get a quotation for my vehicle?",
-            answer: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet, consectetur adipis elit. "
-        },
     ]
     const questionsAns2 = [
         {
@@ -109,6 +105,10 @@ const InsurancePage = () => {
         },
         {
             question: "Why is my Quote not available for online renewal?",
+            answer: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet, consectetur adipis elit. "
+        },
+        {
+            question: "How do I get a quotation for my vehicle?",
             answer: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet, consectetur adipis elit. "
         },
     ]
