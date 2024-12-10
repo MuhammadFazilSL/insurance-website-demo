@@ -132,6 +132,7 @@ height: 18px;
 }
 .home-container>.feedback-section>.feedback-area>.feedbackarea-cards{
     padding: 5px;
+    overflow: hidden;
     width: 70%;
 }
 .home-container>.downloadApp-section{

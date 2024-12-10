@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import Banner from './banner/banner'
 import './home.css'
 import InsuranceCards from '../utils/insuranceCards/insuranceCards'
@@ -16,8 +16,74 @@ import image7 from '../assets/home/partners/image7.png'
 import image8 from '../assets/home/partners/image8.png'
 import image9 from '../assets/home/partners/image9.png'
 import image10 from '../assets/home/partners/image10.png'
+import personImg from '../assets/home/person-img.png'
 
 const Home = () => {
+
+  const cardDetails = [
+    {
+        content: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet,",
+        name: "Arun KumarA.",
+        image: personImg,
+        place: "Chennai",
+        ratings: 1
+    },
+    {
+        content: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet,",
+        name: "Arun KumarA.",
+        image: personImg,
+        place: "Chennai",
+        ratings: 2
+    },
+    {
+        content: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet,",
+        name: "Arun KumarA.",
+        image: personImg,
+        place: "Chennai",
+        ratings: 5
+    },
+    {
+        content: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet,",
+        name: "Arun KumarA.",
+        image: personImg,
+        place: "Chennai",
+        ratings: 5
+    },
+    {
+        content: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet,",
+        name: "Arun KumarA.",
+        image: personImg,
+        place: "Chennai",
+        ratings: 5
+    },
+]
+const sliderRef = useRef(null); // Reference to the Slider component
+
+// React Slick Settings
+const settings = {
+  dots: false, // Disable dots navigation
+  infinite: true, // Infinite loop
+  speed: 500, // Transition speed
+  slidesToShow: 3, // Show 3 cards at a time
+  slidesToScroll: 1, // Move 1 card at a time
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
+
   return (
     <div className="home-container">
       <Banner />
@@ -36,17 +102,22 @@ const Home = () => {
           <span className='feedbackarea-content'>
             <h6>Porem ipsum dolor sit.</h6>
             <p>Partnered with us so that you can compare easily & transparently in your purchase decisions.</p>
-            <span>
-              <span>
-                <img src={arrowLeft} alt="" />
+            <span >
+              <span 
+                className="prev-arrow"
+                onClick={() => sliderRef.current.slickPrev()}>
+                <img src={arrowLeft} alt=""   // Go to previous slide 
+                />
               </span>
-              <span>
-                <img src={arrowLeft} alt="" />
+              <span className="next-arrow"
+                onClick={() => sliderRef.current.slickNext()} >
+                <img src={arrowLeft} alt="" // Go to next slide
+              />
               </span>
             </span>
           </span>
           <span className='feedbackarea-cards'>
-            <FeedbackCards />
+            <FeedbackCards  cardDetails={cardDetails} sliderRef={sliderRef} settings={settings}/>
           </span>
         </div>
       </div>
@@ -147,5 +218,7 @@ const Home = () => {
     </div>
   )
 }
+
+
 
 export default Home

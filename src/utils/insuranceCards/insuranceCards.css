@@ -75,7 +75,7 @@ position:absolute;
 right: -16px;
 bottom: -16px;
 }
-.insuranceCards-cards>.insuranceCards-card.active>span>span:nth-child(2){
+.insuranceCards-cards>.insuranceCards-card:hover>span>span:nth-child(2){
     width: 58.002px;
     height: 58px;
     display: flex;
@@ -84,10 +84,10 @@ bottom: -16px;
     background: rgba(253, 237, 242, 0.60);
     border-radius: 82% 13% 13% 0;
     position:absolute;
-    right: -16px;
-    bottom: -16px;
+    right: -15px;
+    bottom: -15px;
 }
-.insuranceCards-cards>.insuranceCards-card.active>span>span:nth-child(2)>span{
+.insuranceCards-cards>.insuranceCards-card:hover>span>span:nth-child(2)>span{
     width: 46.002px;
 height: 46px;
 display: flex;
@@ -96,10 +96,18 @@ justify-content: center;
 background: #FEE0E2;
 border-radius: 82% 13% 13% 0;
 position:absolute;
-right: -2px;
-bottom: -2px;
+right: 1px;
+bottom: 1px;
 }
-.insuranceCards-cards>.insuranceCards-card>span>span:nth-child(2)>img{
+.insuranceCards-cards>.insuranceCards-card>span>span:nth-child(2)>span:nth-child(1)>img{
+   display: none;
     width: 18px;
     height: 18px;
+}
+.insuranceCards-cards>.insuranceCards-card:hover>span>span:nth-child(2)>span:nth-child(1)>img{
+    display: block;
+    z-index: 1;
+}
+.insuranceCards-cards>.insuranceCards-card:hover>span>span:nth-child(2)>span:nth-child(2)>img{
+    display: none;
 }

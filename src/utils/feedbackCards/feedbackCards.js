@@ -1,47 +1,13 @@
 import React from 'react'
 import './feedbackCards.css'
-import personImg from '../../assets/home/person-img.png'
 import commaImg from '../../assets/home/comma-img.png'
 import starImg from '../../assets/home/star-img.png'
+import arrowLeft from '../../assets/home/arrow-left.png'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-const FeedbackCards = () => {
-    const cardDetails = [
-        {
-            content: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet,",
-            name: "Arun KumarA.",
-            image: personImg,
-            place: "Chennai",
-            ratings: 1
-        },
-        {
-            content: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet,",
-            name: "Arun KumarA.",
-            image: personImg,
-            place: "Chennai",
-            ratings: 2
-        },
-        {
-            content: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet,",
-            name: "Arun KumarA.",
-            image: personImg,
-            place: "Chennai",
-            ratings: 5
-        },
-        {
-            content: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet,",
-            name: "Arun KumarA.",
-            image: personImg,
-            place: "Chennai",
-            ratings: 5
-        },
-        {
-            content: "Lorem ipsum dolor sit amet, consectetur adipis elit. Nunc vulputate libero et velitLorem ipsum dolor sit amet,",
-            name: "Arun KumarA.",
-            image: personImg,
-            place: "Chennai",
-            ratings: 5
-        },
-    ]
+const FeedbackCards = (props) => {
     const displayStars = (ratings) =>{
     const array = []
         console.log(ratings)
@@ -52,15 +18,16 @@ const FeedbackCards = () => {
         console.log(array)
         return(
             array.map(item => (
-                <img src={starImg} alt="" />
+                <img src={starImg} alt="" key={item} />
             ))
         )
 
     }
+ 
   return (
-    <div className="feedbackCards-cards">
+    <Slider {...(props.settings)} ref={props.sliderRef} className="feedbackCards-cards">
         {
-            cardDetails.map((item,index)=>(
+            props.cardDetails.map((item,index)=>(
                 <span className={ index === 0 ? 'feedbackCards-card active' : 'feedbackCards-card'}>
                     <img src={commaImg} alt="" />
                     <p>{item.content}</p>
@@ -82,7 +49,7 @@ const FeedbackCards = () => {
                 </span>
             ))
         }
-    </div>
+        </Slider>
   )
 }
 

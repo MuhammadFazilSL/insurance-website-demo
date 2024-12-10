@@ -14,7 +14,7 @@ const Navbar = () => {
             <span className="navitem">
                {
                 navItems.map(item => (
-                    <p onClick={()=>navigate(`/insurance-website-demo/insurance/${item}`)}>{item}</p>
+                    <p onClick={()=>navigate(`/insurance-website-demo/insurance/carInsurance `)}>{item}</p>
                 ))
                }
             </span>

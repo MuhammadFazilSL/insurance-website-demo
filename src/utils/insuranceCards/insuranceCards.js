@@ -118,20 +118,14 @@ const InsuranceCards = () => {
                             <p>{(item.title).split(" ")[0]}</p>
                             <p>{(item.title).split(" ")[1]}</p>
                         </span>
-                        {
-                            selectedIndex === index ? 
                             <span>
-                                <span>
+                              <span>
                                 <img src={arrowRightactive} alt="" />
-                            </span>
-                            </span>
-                            :
-                            <span> 
-                                <span>
+                              </span>
+                              <span>
                                     <img src={arrowRight} alt="" />
                                 </span>
                             </span>
-                        }
                     </span>
                 </span>
             ))
